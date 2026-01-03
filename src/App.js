@@ -6,12 +6,16 @@ import {
   FaFilm, 
   FaBars, 
   FaTimes,
-  FaCode
+  FaCode,
+  FaHeart,
 } from "react-icons/fa";
 import InterviewCoach from "./components/InterviewCoach";
 import HRAssistant from "./components/HRAssistant";
 import MoviePlanner from "./components/MoviePlanner";
 import SkillsPractice from "./components/SkillsPractice";
+import AIAssistant from "./components/AIAssistant";
+import MentalHealthSupport from "./components/MentalHealthSupport";
+import { FaComments } from "react-icons/fa";
 import "./App.css";
 
 function App() {
@@ -25,6 +29,12 @@ function App() {
       icon: <FaGraduationCap className="tab-icon" />,
       component: <InterviewCoach />
     },
+    {
+      id: "chat",
+      label: "AI Chat",
+      icon: <FaComments className="tab-icon" />,
+      component: <AIAssistant />
+    },
     { 
       id: "skills", 
       label: "Skills Practice", 
@@ -37,6 +47,12 @@ function App() {
       icon: <FaUserTie className="tab-icon" />,
       component: <HRAssistant /> 
     },
+    {
+    id: "mental-health",
+    label: "Mental Health",
+    icon: <FaHeart className="tab-icon" />,
+    component: <MentalHealthSupport />
+   },
     { 
       id: "movies", 
       label: "Movie Planner", 
