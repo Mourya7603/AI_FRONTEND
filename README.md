@@ -1,70 +1,166 @@
-# Getting Started with Create React App
+# 🎯 AI Calling Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An intelligent voice-based AI assistant platform designed for mock interviews, HR query handling, and interactive entertainment. Practice interviews, get real-time feedback, and improve your communication skills.
 
-## Available Scripts
+🌐 **Live Demo:** [ai-frontend-peach-five.vercel.app](https://ai-frontend-peach-five.vercel.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Core Functionality
+- **AI-Powered Mock Interviews** - Practice interviews with an intelligent AI assistant
+- **Personalized Questions** - Questions tailored to your candidate profile and skills
+- **Real-Time Feedback** - Instant suggestions and performance analysis
+- **Timed Sessions** - Simulate real interview conditions with countdown timers
+- **Multi-Domain Support** - Interviews, HR queries, and entertainment modes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Candidate Profile
+- **Tech Stack Selection** - Choose your technologies (React, JavaScript, CSS, etc.)
+- **Experience Level** - Tailored questions based on seniority
+- **Role Specification** - Frontend, Backend, Full Stack, or specialized roles
 
-### `npm test`
+### User Experience
+- **Voice Interaction** - Natural conversation with AI assistant
+- **Responsive Design** - Access from any device
+- **Real-Time Processing** - Instant responses and feedback
+- **Session Recording** - Review your performance after each session
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Category | Technologies |
+|----------|-------------|
+| **Frontend** | React.js, React Router |
+| **Styling** | CSS3 / Tailwind CSS |
+| **Voice/AI** | Web Speech API / AI Service Integration |
+| **HTTP Client** | Axios |
+| **State Management** | React Context API / Hooks |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Quick Start
 
-### `npm run eject`
+bash
+# Clone the repository
+git clone https://github.com/Mourya7603/ai-frontend.git
+cd ai-frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Install dependencies
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Start development server
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Build for production
+npm run build
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📡 API Integration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This frontend connects to an AI backend service for question generation, voice processing, and feedback analysis.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Expected API Endpoints
 
-### Code Splitting
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/profile/create` | Create candidate profile |
+| GET | `/api/questions/generate` | Generate personalized questions |
+| POST | `/api/response/analyze` | Analyze candidate response |
+| GET | `/api/feedback/:sessionId` | Get session feedback |
+| POST | `/api/interview/start` | Start interview session |
+| POST | `/api/interview/end` | End interview session |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🎯 Key Features Breakdown
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Candidate Profile Setup
+- **Technology Selection** - Choose your tech stack (React, JavaScript, CSS, etc.)
+- **Experience Level** - Select from Entry, Mid, Senior, Lead levels
+- **Role Focus** - Frontend, Backend, Full Stack, or specialized roles
+- **Goal Setting** - Practice mode, assessment mode, or entertainment
 
-### Making a Progressive Web App
+### Interview Modes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Mode | Description | Features |
+|------|-------------|----------|
+| **Mock Interview** | Simulate real job interview | Timed questions, scoring, detailed feedback |
+| **HR Query** | Practice HR-related questions | Behavioral questions, company culture fit |
+| **Entertainment** | Casual conversation with AI | Fun facts, trivia, general chat |
 
-### Advanced Configuration
+### Real-Time Features
+- **Voice Recognition** - Speak naturally, AI understands and responds
+- **Text-to-Speech** - AI responses read aloud for immersive experience
+- **Typing Indicators** - Visual feedback while AI processes
+- **Performance Metrics** - Real-time scoring on clarity, relevance, confidence
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Feedback & Analytics
+- **Question-by-Question Analysis** - Detailed breakdown of each response
+- **Strengths & Weaknesses** - Identify areas for improvement
+- **Suggested Resources** - Learning materials for weak areas
+- **Progress Tracking** - Monitor improvement over multiple sessions
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🎨 User Interface
 
-### `npm run build` fails to minify
+### Dashboard
+- Quick access to different interview modes
+- View recent sessions and scores
+- Profile management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Interview Screen
+- Question display area
+- Voice input controls (mic on/off)
+- Timer showing remaining time
+- Real-time feedback during response
+- Next question / End session buttons
+
+### Results Screen
+- Overall score and performance rating
+- Detailed feedback per question
+- Comparison with previous sessions
+- Option to retry or start new session
+
+---
+
+## 📱 Responsive Design
+
+| Device | Experience |
+|--------|------------|
+| **Desktop** | Full interface with all controls visible |
+| **Tablet** | Optimized layout with touch-friendly buttons |
+| **Mobile** | Simplified view, voice-first interaction |
+
+---
+
+## 🚦 Future Enhancements
+
+- [ ] Multiple language support
+- [ ] Video interview simulation
+- [ ] Code challenge integration
+- [ ] Peer-to-peer mock interviews
+- [ ] Resume parsing for personalized questions
+- [ ] Company-specific interview practice
+- [ ] Certification upon completion
+- [ ] Social sharing of achievements
+- [ ] Mobile app version
+
+---
+
+## 📧 Contact
+
+**Developer:** Mangalapalli Mourya
+
+**Email:** magalapallimourya@gmail.com
+
+**GitHub:** [@Mourya7603](https://github.com/Mourya7603)
+
+---
+
+⭐ If you find this project helpful, please give it a star on GitHub!
+
+---
