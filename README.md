@@ -6,6 +6,12 @@ An intelligent voice-based AI assistant platform designed for mock interviews, H
 
 ---
 
+## Demo Video
+Watch a walkthrough (5–7 minutes) of all major features of this app:  
+[Video Link](https://drive.google.com/file/d/1V4rIDjViJm3Drjwt0BsV7TvSjGs8tlEQ/view?usp=drive_link) 
+
+---
+
 ## ✨ Features
 
 ### Core Functionality
